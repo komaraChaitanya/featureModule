@@ -1,0 +1,9 @@
+<div>
+    <button (click)='addNotification()' class='p-2 bg-blue-500 text-white rounded mb-2'>New Notification</button>
+    <br/>
+    <ul>
+      <li *ngFor='let notification of notifications' class='p-2 border-b'>
+        {{ notification }}
+      </li>
+    </ul>
+  </div>

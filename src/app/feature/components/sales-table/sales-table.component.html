@@ -1,0 +1,20 @@
+<div>
+    <input type='text' placeholder='Search product name...' (input)='filterData($event)' class='p-2 border rounded mb-2'>
+    <br/>
+    <table class='sales-table'>
+      <thead>
+        <tr>
+          <th (click)='sort("product")' class='border p-2 cursor-pointer'>Product</th>
+          <th (click)='sort("price")' class='border p-2 cursor-pointer'>Price</th>
+          <th (click)='sort("quantity")' class='border p-2 cursor-pointer'>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let sale of filteredSales'>
+          <td class='border p-2'>{{ sale.product }}</td>
+          <td class='border p-2'>{{ sale.price }}</td>
+          <td class='border p-2'>{{ sale.quantity }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

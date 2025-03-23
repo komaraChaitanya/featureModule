@@ -1,0 +1,12 @@
+<h2>Welcome to the Feature Module!</h2>
+<p>This is dynamically loaded using Webpack Module Federation.</p>
+<div class='p-4 bg-white shadow rounded-lg'>
+    <div class='flex space-x-4 mb-4 border-b'>
+      <ul>
+        <li><a routerLink='/feature/user-analytics' routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">User Analytics</a></li>
+        <li><a routerLink='/feature/sales-dashboard' routerLinkActive="active-link">Sales Dashboard</a></li>
+        <li><a routerLink='/feature/notifications' routerLinkActive="active-link">Notifications</a></li>
+      </ul>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
